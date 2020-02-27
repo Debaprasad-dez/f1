@@ -7,7 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="guu.css">
 </head>
 <body>
-	<div>
+	
+<div class="loader">
+		<div>
 	<p style="margin: 0;
 	font-family: 'Odibee Sans';
     font-size: 250%;
@@ -28,5 +30,19 @@
 	    <span></span>
 	  </div>
 	</div>
+</div>
+
+	<div class="main-content">
+		
+	</div>
+
+	<script>
+    let loader = document.querySelector('.loader');
+
+    window.addEventListener('load', function () {
+        // spinnerWrapper.style.display = 'none';
+        loader.parentElement.removeChild(loader);
+    });
+</script>
 </body>
 </html>
