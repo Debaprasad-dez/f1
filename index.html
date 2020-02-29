@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>hahaha</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="guu.css">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<title>bhoo</title>
+	<link rel="stylesheet" href="hur.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="guu.css">
 </head>
 <body>
-	
-<div class="loader">
+
+	<div class="loader">
 		<div>
 	<p style="margin: 0;
 	font-family: 'Odibee Sans';
@@ -33,10 +38,36 @@
 	  </div>
 	</div>
 </div>
-		<div class="container">
+	
+	<header>
+        <div class="container">
+
+            <nav class="nav1">
+                <a href="index.html" class="logo">
+                	Mazaak inc.
+                </a>
+                <label for="toggle">&#9776</label>
+                <input type="checkbox" id="toggle"/>
+                <ul class="nav1-list">
+                    <li>
+                        <a href="index.html" class="nav1-link" style="font-family: 'Righteous'">Resume</a>
+                    </li>
+
+                    
+                </ul>
+                <a href="#" id="nav1-cta">Book now</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero"></section>
+    <section class="demo-content"></section>
+
+    <footer>
+    	<div class="container2">
 				<nav class="nav">
 				<div class="social-media-cta">
-					<h1>Explore Here</h1>
+					<h1>Get in Touch</h1>
 				</div>
 				<div class="separator-line"></div>
 				<ul class="nav-list">
@@ -58,14 +89,14 @@
 				</ul>
 			</nav>
 		</div>
+    </footer>
 
-	<script>
-    let loader = document.querySelector('.loader');
-
-    window.addEventListener('load', function () {
-        // spinnerWrapper.style.display = 'none';
-        loader.parentElement.removeChild(loader);
-    });
-</script>
+    <script>
+    	window.addEventListener('scroll',function() {
+    		let header=document.querySelector('header');
+    		let windowPosition= window.scrollY>0;
+    		header.classList.toggle('scrolling-active',windowPosition);
+    	})
+    </script>
 </body>
 </html>
