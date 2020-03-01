@@ -129,5 +129,8 @@ html{
 	.nav-item:nth-child(even){
 	transform: translate(-5rem,0);
 	}
+	.container2{
+		flex-direction: column;
+	}
 }
 
