@@ -160,14 +160,47 @@ header{
     background-color: rgba(0,0,0,.5);
 }
 
+
 .demo-content{
     width: 100%;
-    height:85vh;
+    height:100vh;
     background: url("qt.png") center no-repeat;
     background-size: cover;
     position: relative;
 }
 .demo-content::after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.demo-content2{
+    width: 100%;
+    height:120vh;
+    background: url("gf1.png") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.demo-content2::after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.demo-content3{
+    width: 100%;
+    height:108vh;
+    background: url("got.png") center no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.demo-content3::after{
     content: '';
     width: inherit;
     height: inherit;
@@ -238,9 +271,32 @@ label{
     .nav1-link{
         margin: 10px;
         border-radius: 25px;
-        
-        
+        opacity: 0;
+        display: none;
     }
+
+    .hero{
+        height: 30vh;
+        background-size: contain;
+    }
+
+    .demo-content{
+    height: 30vh;
+    background-size: contain;
+
+    }
+
+    .demo-content2{
+    height: 30vh;
+    background-size: contain;
+
+    }
+    .demo-content3{
+    height: 29vh;
+    background-size: contain;
+
+    }
+    
     .scrolling-active .hero{
         display: block;
     }
@@ -249,5 +305,6 @@ label{
     }
     .scrolling-active .nav1-link{
         opacity: 100%;
+        display: block;
     }
 }
