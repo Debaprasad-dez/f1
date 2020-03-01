@@ -77,6 +77,26 @@ header{
     transform: scaleX(1);
 }
 
+#Buy{
+    display: inline-block;
+    background-color: #fff;
+    color: #313131;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: background-color .5s ease;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+#Buy:hover{
+    display: inline-block;
+    background: linear-gradient(45deg ,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: background-color .5s ease;
+    font-size: 1.6rem;
+}
+
 #nav1-cta{
     display: inline-block;
     background-color: #fff;
@@ -220,6 +240,9 @@ label{
         border-radius: 25px;
         
         
+    }
+    .scrolling-active .hero{
+        display: block;
     }
     .scrolling-active .nav1-list a{
         color: white;
